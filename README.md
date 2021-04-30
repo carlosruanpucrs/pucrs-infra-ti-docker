@@ -21,4 +21,4 @@
 
 3. Visualizar os dados da API:
   - curl http://localhost:8080/v1/users
-  - curl http://localhost:8080/v1/id
+  - curl http://localhost:8080/v1/users/id
