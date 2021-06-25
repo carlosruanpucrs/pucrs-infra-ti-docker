@@ -1,11 +1,11 @@
 FROM openjdk:11
 
+RUN apt-get update
+
 WORKDIR /app
 
-COPY target/users_docker-0.0.1-SNAPSHOT.jar /app/spring_boot_docker.jar
+COPY target/users_docker-0.0.1-SNAPSHOT.jar /app/spring-api-users.jar
 
 EXPOSE 8080
 
-SHELL ["/bin/sh", "-c"]
-
-ENTRYPOINT ["java", "-jar", "spring_boot_docker.jar"]
+ENTRYPOINT ["java", "-jar", "spring-api-users.jar"]
